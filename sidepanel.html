@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unwind ’16</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">&#10047;</span>
+        <div>
+          <h1>Unwind ’16</h1>
+          <p>low-stim study fidgets</p>
+        </div>
+      </div>
+      <button id="muteBtn" class="icon-btn" type="button" aria-pressed="false" aria-label="Mute sounds" title="Mute / unmute">&#128266;</button>
+    </header>
+
+    <section class="card timer" aria-label="Focus timer">
+      <div class="lengths" role="group" aria-label="Sprint length">
+        <button type="button" class="chip" data-len="1" title="Quick demo sprint">1m demo</button>
+        <button type="button" class="chip" data-len="15">15m</button>
+        <button type="button" class="chip" data-len="25">25m</button>
+        <button type="button" class="chip" data-len="50">50m</button>
+      </div>
+      <div class="time" id="timeDisplay" role="timer" aria-live="off">25:00</div>
+      <div class="bar sprint-bar" aria-hidden="true"><i id="sprintBar"></i></div>
+      <button id="startBtn" class="btn primary" type="button">Start Session</button>
+      <p class="bank">Banked: <b id="bankMins">0</b> Focus Mins</p>
+      <div class="bar next-bar" aria-hidden="true"><i id="nextBar"></i></div>
+      <p class="next" id="nextText"></p>
+    </section>
+
+    <section class="stage" id="stage" aria-label="Pinned fidgets"></section>
+    <p class="empty" id="stageEmpty" hidden>nothing pinned yet &mdash; pin a fidget from the drawer below &darr;</p>
+
+    <section class="drawer" aria-label="Advent drawer">
+      <h2>Advent Drawer</h2>
+      <p class="drawer-sub">study to unlock &middot; pin up to 2 at a time</p>
+      <ul class="grid" id="drawerGrid"></ul>
+    </section>
+
+    <details class="tools">
+      <summary>demo tools</summary>
+      <div class="tools-row">
+        <button type="button" class="btn small" id="bonusBtn">+15 focus mins</button>
+        <button type="button" class="btn small ghost" id="resetBtn">reset progress</button>
+      </div>
+    </details>
+
+    <footer class="foot">made with &#10084; for Hack Like W@CC &middot; 2016 &ldquo;Rewind and Remix&rdquo;</footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
