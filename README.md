@@ -3,9 +3,11 @@
 *Curing 2026 brainrot with 2016 tactile nostalgia.*
 
 ## Run it
-1. Open `chrome://extensions` and switch on **Developer mode**.
-2. Click **Load unpacked** and choose this folder.
-3. Click the Unwind ’16 icon in the toolbar. The side panel opens.
+
+1. **[Download the Latest Release (ZIP)](https://github.com/ayannamodi/unwind16/releases/download/v1.0.0/unwind16-extension.zip)** and unzip the folder to your computer.
+2. Open `chrome://extensions` and switch on **Developer mode**.
+3. Click **Load unpacked** and choose the unzipped `unwind16` folder.
+4. Click the Unwind ’16 icon in the toolbar. The side panel opens.
 
 Needs Chrome 114+ (side panel API).
 
